@@ -21,11 +21,11 @@ const DarkModeToggle = () => {
   if (mounted)
     return (
       <div onClick={() => handleTheme()} className="md:w-32 h-7 flex gap-4 items-center justify-between text-grey-navy dark:text-white transition-all">
-        <FiSun />
+        <FiSun title="Sun Icon" />
         <div className="bg-primary rounded-full flex h-full items-center px-1 relative w-12">
           <span className={`bg-white absolute rounded-full w-5 h-5 ${resolvedTheme === "dark" ? "translate-x-full" : ""} transition-all`}></span>
         </div>
-        <FiMoon />
+        <FiMoon title="Moon Icon" />
       </div>
     );
 };

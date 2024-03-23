@@ -15,7 +15,7 @@ const CategoryIndicator = () => {
         style={{ backgroundColor: subjectData?.bg }}
         className="mr-6 md:w-14 md:h-14 flex items-center justify-center rounded-lg shadow"
       >
-        <Image src={subjectData?.icon} width={40} height={40} />
+        <Image src={subjectData?.icon} width={40} height={40} alt={subjectData?.title + " logo"}/>
       </div>
       <p className="md:text-[1.75rem] text-lg font-medium text-dark-navy dark:text-white">
         {subject}

@@ -6,7 +6,7 @@ const CategorySelection = () => {
   return (
     <article className="lg:w-[35.25rem] w-full">
       <ul className="flex flex-col md:gap-6 gap-3">
-        {Data.map((category) => <CategoryItem title={category.title} icon={category.icon} bg={category.bg}/>)}
+        {Data.map((category) => <CategoryItem key={category.title} title={category.title} icon={category.icon} bg={category.bg}/>)}
       </ul>
     </article>
   );

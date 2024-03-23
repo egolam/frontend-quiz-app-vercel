@@ -7,7 +7,6 @@ const NextQuestionBtn = () => {
     setSubmittedAnswer,
     nextQuestion,
     questionIndex,
-    score,
     addScore,
     submittedAnswer,
   } = useQuizStore();

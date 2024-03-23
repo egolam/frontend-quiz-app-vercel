@@ -13,7 +13,7 @@ const CategoryItem = ({ title, icon, bg }) => {
         style={{ backgroundColor: bg }}
         className={`md:rounded-lg rounded flex items-center justify-center lg:w-14 lg:h-14`}
       >
-        <Image src={icon} width={40} height={40} />
+        <Image src={icon} width={40} height={40} alt={title + " logo"} />
       </div>
       <p className="ml-8">{title}</p>
     </Link>
